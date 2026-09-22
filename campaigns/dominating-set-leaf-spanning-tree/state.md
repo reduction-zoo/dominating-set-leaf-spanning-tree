@@ -1,6 +1,6 @@
 # Campaign state
 
-Status: prepared. Date: 2026-09-22. Budget: 20 rounds authorized; 0 used, 20 remaining; 0 mechanisms attempted.
+Status: verifying. Date: 2026-09-22. Budget: 20 rounds authorized; 1 used, 19 remaining; 1 mechanism attempted.
 
 ## Scope
 
@@ -20,9 +20,10 @@ Status: prepared. Date: 2026-09-22. Budget: 20 rounds authorized; 0 used, 20 rem
 
 | Round | Mechanism or literature scope | First discriminating check | Outcome | Record |
 |---|---|---|---|---|
+| 001 | Closed-neighborhood set/element incidence graph with forced-internal root | Prepared exhaustive candidate loop over every enumerated target output | Supported | [`rounds/001/round.md`](rounds/001/round.md) |
 
 ## Evidence and next action
 
-The independent exhaustive testing foundation passed its self-test and is specified in [`work/preparation.md`](work/preparation.md), with exact encodings in [`work/contract.md`](work/contract.md). Next: commit Prepare, then read Propose and begin round 001 with a recorded construction hypothesis.
+Prepare is committed at `b8aaeaa`. Round 001 produced executable F/G and a general every-valid-output proof. The prepared loop passed 11 source instances and 97 independently enumerated target outputs. Next: commit round 001 and run the broader Verify stage.
 
 Experience extraction: none at initialization; no research finding exists yet.

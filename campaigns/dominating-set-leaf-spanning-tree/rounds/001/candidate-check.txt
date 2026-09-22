@@ -1,0 +1,5 @@
+Command: uv run python campaigns/dominating-set-leaf-spanning-tree/work/check.py --candidate campaigns/dominating-set-leaf-spanning-tree/work/algorithm.py
+Date: 2026-09-22
+Candidate revision: working tree leading to the round 001 commit
+Result: candidate passed: 11 source instances, 97 independently enumerated target outputs
+Limits: finite instances on at most five source vertices; the general claim rests on work/proof.md.
