@@ -1,6 +1,6 @@
 # Campaign state
 
-Status: awaiting independent review. Date: 2026-09-22. Budget: 20 rounds authorized; 1 used, 19 remaining; 1 mechanism attempted.
+Status: awaiting focused re-review. Date: 2026-09-22. Budget: 20 rounds authorized; 1 used, 19 remaining; 1 mechanism attempted.
 
 ## Scope
 
@@ -24,6 +24,6 @@ Status: awaiting independent review. Date: 2026-09-22. Budget: 20 rounds authori
 
 ## Evidence and next action
 
-Prepare is committed at `b8aaeaa`; candidate round 001 is committed at `537f518`. The prepared loop passed 11 source instances and 97 independently enumerated target outputs. Independent Verify passed all 44 connected labeled graphs through four vertices, 255 source instances and 598 recovered target outputs after checking 1,295,656 target edge subsets and 166,307 spanning trees. Next: commit verification and request a fresh-context registered review.
+Prepare is committed at `b8aaeaa`; candidate round 001 is committed at `537f518`; verification is committed at `c2c6f8a`. Review 001 (`728b2b8`) judged the graph construction and recovery sound but found CPython's default 4,300-digit JSON integer limit violated the unbounded-integer contract. The repair disables that process-local limit. The prepared 97-output loop and the exhaustive 598-output verification both pass again, with raw 5,000-digit input passing forward and extraction modes. Next: commit the repair and request focused re-review.
 
 Experience extraction: none at initialization; no research finding exists yet.

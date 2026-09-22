@@ -79,6 +79,8 @@ G scans the `2n+1` tree edges, then the two vertex layers, in `O(n)` arithmetic
 operations on `O(log n)`-bit identifiers. Its output has at most `n` identifiers
 and length `O(n log n)`. Both subprocess modes are deterministic and reconstruct
 all layer identifiers from the source, with no retained state or oracle calls.
+Before JSON input parsing, both modes disable CPython's process-local decimal
+integer digit cap, so legal encoded integers are not truncated or rejected.
 
 ## Evidence boundary
 

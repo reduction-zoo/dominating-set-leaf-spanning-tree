@@ -113,7 +113,33 @@ def run_json(command, value):
         raise RuntimeError(f"{' '.join(command)} returned invalid JSON") from error
 
 
+def verify_integer_boundary(candidate):
+    source = '{"n":1,"edges":[],"k":' + "9" * 5000 + "}"
+    forward = subprocess.run(
+        [sys.executable, candidate], input=source, text=True, capture_output=True, check=True
+    )
+    assert json.loads(forward.stdout) == {
+        "n": 4,
+        "edges": [[0, 1], [0, 2], [2, 3]],
+        "K": 2,
+    }
+    extraction = (
+        '{"source":'
+        + source
+        + ',"target_solution":{"tree_edges":[[0,1],[0,2],[2,3]]}}'
+    )
+    recovered = subprocess.run(
+        [sys.executable, candidate, "--extract"],
+        input=extraction,
+        text=True,
+        capture_output=True,
+        check=True,
+    )
+    assert json.loads(recovered.stdout) == {"dominating_set": [0]}
+
+
 def verify(candidate):
+    verify_integer_boundary(candidate)
     cases = []
     graph_count = 0
     for n, edges in connected_graphs(4):
@@ -160,7 +186,7 @@ def verify(candidate):
     print(
         f"verification passed: {graph_count} connected graphs, {instance_count} source instances, "
         f"{output_count} target outputs exercised, {subset_count} edge subsets and "
-        f"{tree_count} spanning trees independently checked"
+        f"{tree_count} spanning trees independently checked; 5000-digit k passed both modes"
     )
 
 

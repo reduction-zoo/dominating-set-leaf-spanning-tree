@@ -1,0 +1,8 @@
+Commands:
+  uv run python campaigns/dominating-set-leaf-spanning-tree/work/check.py --candidate campaigns/dominating-set-leaf-spanning-tree/work/algorithm.py
+  uv run python campaigns/dominating-set-leaf-spanning-tree/work/verify.py --candidate campaigns/dominating-set-leaf-spanning-tree/work/algorithm.py
+Date: 2026-09-22
+Repair: disable CPython's process-local integer-string digit limit before parsing command input.
+Results:
+  candidate passed: 11 source instances, 97 independently enumerated target outputs
+  verification passed: 44 connected graphs, 255 source instances, 598 target outputs exercised, 1295656 edge subsets and 166307 spanning trees independently checked; 5000-digit k passed both modes

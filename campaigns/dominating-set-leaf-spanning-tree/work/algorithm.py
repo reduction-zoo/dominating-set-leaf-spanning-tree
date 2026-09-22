@@ -36,6 +36,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--extract", action="store_true")
     args = parser.parse_args()
+    sys.set_int_max_str_digits(0)
     value = json.load(sys.stdin)
     output = extract(value["source"], value["target_solution"]) if args.extract else construct(value)
     json.dump(output, sys.stdout, separators=(",", ":"))
