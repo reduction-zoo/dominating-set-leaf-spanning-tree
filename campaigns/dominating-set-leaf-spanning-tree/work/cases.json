@@ -1,0 +1,64 @@
+[
+  {
+    "name": "single-k-zero",
+    "source": {"n": 1, "edges": [], "k": 0},
+    "has_solution": false
+  },
+  {
+    "name": "single-k-one",
+    "source": {"n": 1, "edges": [], "k": 1},
+    "has_solution": true,
+    "witnesses": [[0]]
+  },
+  {
+    "name": "edge-k-zero",
+    "source": {"n": 2, "edges": [[0, 1]], "k": 0},
+    "has_solution": false
+  },
+  {
+    "name": "edge-k-one",
+    "source": {"n": 2, "edges": [[0, 1]], "k": 1},
+    "has_solution": true,
+    "witnesses": [[0], [1]]
+  },
+  {
+    "name": "path-three-k-one",
+    "source": {"n": 3, "edges": [[0, 1], [1, 2]], "k": 1},
+    "has_solution": true,
+    "witnesses": [[1]]
+  },
+  {
+    "name": "cycle-four-k-one",
+    "source": {"n": 4, "edges": [[0, 1], [1, 2], [2, 3], [0, 3]], "k": 1},
+    "has_solution": false
+  },
+  {
+    "name": "cycle-four-k-two",
+    "source": {"n": 4, "edges": [[0, 1], [1, 2], [2, 3], [0, 3]], "k": 2},
+    "has_solution": true,
+    "witnesses": [[0, 2], [1, 3]]
+  },
+  {
+    "name": "star-five-k-one",
+    "source": {"n": 5, "edges": [[0, 1], [0, 2], [0, 3], [0, 4]], "k": 1},
+    "has_solution": true,
+    "witnesses": [[0]]
+  },
+  {
+    "name": "path-five-k-one",
+    "source": {"n": 5, "edges": [[0, 1], [1, 2], [2, 3], [3, 4]], "k": 1},
+    "has_solution": false
+  },
+  {
+    "name": "path-five-k-two",
+    "source": {"n": 5, "edges": [[0, 1], [1, 2], [2, 3], [3, 4]], "k": 2},
+    "has_solution": true,
+    "witnesses": [[0, 3], [1, 3], [1, 4]]
+  },
+  {
+    "name": "huge-k",
+    "source": {"n": 3, "edges": [[0, 1], [1, 2]], "k": 1361129467683753853853498429727072845824},
+    "has_solution": true,
+    "witnesses": [[1]]
+  }
+]

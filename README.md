@@ -1,6 +1,6 @@
 # Dominating Set → Maximum Leaf Spanning Tree with a threshold
 
-Independent research campaign. Status: preparing; no construction claim yet.
+Independent research campaign. Status: prepared; no construction claim yet.
 
 [Fixed question](campaigns/dominating-set-leaf-spanning-tree/question.md) · [Campaign state](campaigns/dominating-set-leaf-spanning-tree/state.md).
 

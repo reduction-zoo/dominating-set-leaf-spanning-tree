@@ -1,0 +1,4 @@
+Command: uv run python campaigns/dominating-set-leaf-spanning-tree/work/check.py --self-test
+Date: 2026-09-22
+Runtime: CPython 3.14.2 selected by uv 0.12.7
+Result: self-test passed: 11 source cases, 4 target trees, malformed and wrong outputs rejected
