@@ -1,6 +1,6 @@
 # Campaign state
 
-Status: awaiting focused re-review. Date: 2026-09-22. Budget: 20 rounds authorized; 1 used, 19 remaining; 1 mechanism attempted.
+Status: ready_for_expert_review. Date: 2026-09-22. Budget: 20 rounds authorized; 1 used, 19 remaining; 1 distinct mechanism attempted.
 
 ## Scope
 
@@ -24,6 +24,6 @@ Status: awaiting focused re-review. Date: 2026-09-22. Budget: 20 rounds authoriz
 
 ## Evidence and next action
 
-Prepare is committed at `b8aaeaa`; candidate round 001 is committed at `537f518`; verification is committed at `c2c6f8a`. Review 001 (`728b2b8`) judged the graph construction and recovery sound but found CPython's default 4,300-digit JSON integer limit violated the unbounded-integer contract. The repair disables that process-local limit. The prepared 97-output loop and the exhaustive 598-output verification both pass again, with raw 5,000-digit input passing forward and extraction modes. Next: commit the repair and request focused re-review.
+Prepare is committed at `b8aaeaa`; candidate round 001 at `537f518`; verification at `c2c6f8a`; and the integer-boundary repair at `7c08045`. Review 001 (`728b2b8`) judged the graph construction and recovery sound but found CPython's default 4,300-digit JSON integer limit violated the contract. Focused review 002 (`b854146`) independently tested 4,301-, 5,000-, and 10,000-digit inputs in both modes and returned **advance**. The prepared loop passes 11 source instances and 97 target outputs. Independent Verify passes 44 connected graphs, 255 source instances and 598 recovered target outputs after checking 1,295,656 target edge subsets and 166,307 spanning trees. The English Typst [manuscript](work/paper/manuscript.typ) compiles to a five-page [PDF](work/paper/manuscript.pdf); every page was rendered and visually inspected after the final edit. Next: expert review; no publication or upstream action is authorized.
 
-Experience extraction: none at initialization; no research finding exists yet.
+Experience closeout: 0 entries created, 0 updated, 0 pending. Round 001 yielded a complete campaign-specific reconstruction of a known incidence mechanism, not a distinct reusable finding requiring a shared entry.

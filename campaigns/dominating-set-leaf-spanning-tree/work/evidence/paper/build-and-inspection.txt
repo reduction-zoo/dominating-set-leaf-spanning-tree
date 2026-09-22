@@ -1,0 +1,8 @@
+Date: 2026-09-22
+Source: campaigns/dominating-set-leaf-spanning-tree/work/paper/manuscript.typ
+Output: campaigns/dominating-set-leaf-spanning-tree/work/paper/manuscript.pdf
+Compiler: Typst 0.15.1
+Command: typst compile manuscript.typ manuscript.pdf
+Result: success with no diagnostics; 5 A4 pages.
+Inspection: every page rendered with Poppler at 120 dpi and inspected after the final source edit. No clipped text, overlap, unreadable notation, broken cross-reference, malformed appendix number, or bad page break was found. The exact P3 construction figure has the intended vertices, root/pendant edges, and seven closed-neighborhood incidence edges.
+PDF workflow limitation: container_tools/mark_artifact_operation_started.mjs was absent from the environment, so its bookkeeping marker could not be recorded. Typst compilation, Poppler rendering, and visual inspection completed normally.
