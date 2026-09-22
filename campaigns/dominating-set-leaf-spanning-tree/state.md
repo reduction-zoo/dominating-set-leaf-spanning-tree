@@ -1,6 +1,6 @@
 # Campaign state
 
-Status: verifying. Date: 2026-09-22. Budget: 20 rounds authorized; 1 used, 19 remaining; 1 mechanism attempted.
+Status: awaiting independent review. Date: 2026-09-22. Budget: 20 rounds authorized; 1 used, 19 remaining; 1 mechanism attempted.
 
 ## Scope
 
@@ -24,6 +24,6 @@ Status: verifying. Date: 2026-09-22. Budget: 20 rounds authorized; 1 used, 19 re
 
 ## Evidence and next action
 
-Prepare is committed at `b8aaeaa`. Round 001 produced executable F/G and a general every-valid-output proof. The prepared loop passed 11 source instances and 97 independently enumerated target outputs. Next: commit round 001 and run the broader Verify stage.
+Prepare is committed at `b8aaeaa`; candidate round 001 is committed at `537f518`. The prepared loop passed 11 source instances and 97 independently enumerated target outputs. Independent Verify passed all 44 connected labeled graphs through four vertices, 255 source instances and 598 recovered target outputs after checking 1,295,656 target edge subsets and 166,307 spanning trees. Next: commit verification and request a fresh-context registered review.
 
 Experience extraction: none at initialization; no research finding exists yet.

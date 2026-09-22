@@ -1,0 +1,5 @@
+Command: uv run python campaigns/dominating-set-leaf-spanning-tree/work/verify.py --candidate campaigns/dominating-set-leaf-spanning-tree/work/algorithm.py
+Date: 2026-09-22
+Candidate: 537f518
+Result: verification passed: 44 connected graphs, 255 source instances, 598 target outputs exercised, 1295656 edge subsets and 166307 spanning trees independently checked
+Domain: all connected labeled simple source graphs with 1 <= n <= 4; k in {0,...,n} plus 2^130; up to three independently obtained target trees per positive instance and conclusive NO-SOLUTION per negative instance.
